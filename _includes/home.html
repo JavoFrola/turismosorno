@@ -1,0 +1,130 @@
+<section class="wraping">
+	<div class="main-slide">
+		
+		<div class="slide-images">
+			
+			{% for sliding in site.data.settings.slide %}
+			<div class=" slide-figure">	
+					<div class="slide-elements">
+						<img src="/assets/img/slide/{{ sliding.file }}"> 
+				<!--Sobre la imagen<-->		
+						<h2> {{sliding.name}}</h2>
+					</div>			
+			</div>	
+			{% endfor %}
+		</div>	
+		<div class= "controls">
+
+			<div class ="slide-controls">
+				<div class="slide-control-next">{% include iconos/icon-next.html %}</div>
+				<div class="slide-control-prev">{% include iconos/icon-prev.html %}</div>
+			</div>
+			<div class="slide-mobile-control">
+				{% for sliding in site.data.settings.slide %}
+				<span></span>
+				{% endfor %}
+			</div>
+		</div>	
+	</div>
+
+	<section class="eventos">
+		<h2> Eventos próximos</h2>
+		<div class="evento-importante">
+			<h3>Festival de la leche y la carne</h3>
+			<p class= "fecha-evento">1 enero, 2018</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.</p>
+			<button class ="Leer-mas">Leer más</button>
+			<hr>
+		</div>
+
+		<div class="evento-importante">
+			<h3>Oktoberfest</h3>
+			<p class= "fecha-evento">1 enero, 2018</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.</p>
+			<button class ="Leer-mas">Leer más</button>
+			<hr>
+		</div>
+
+		<div class="evento-importante">
+			<h3>Rally Mobil</h3>
+			<p class= "fecha-evento">1 enero, 2018</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.</p>
+			<button class ="Leer-mas">Leer más</button>
+			<hr>
+		</div>
+	</section>
+	<section class="atractivos">
+		<div class="lista-atractivos">	
+			<h2 class="atracciones"> Atractivos</h2>
+			<ul>
+				<li>
+					<figure>
+						<img class="atraccion-osorno" src="../assets/img/mall.jpg" alt="mall">
+						<caption>Mall Portal Osorno</caption>
+					</figure>
+				</li>
+				<li>
+					<figure>
+						<img class="atraccion-osorno" src="../assets/img/mall.jpg" alt="mall">
+						<caption>Complejo Sonesta</caption>
+					</figure>
+				</li>
+				<li>
+					<figure>
+						<img class="atraccion-osorno" src="../assets/img/mall.jpg" alt="mall">
+						<caption>Termas de Puyehue</caption>
+					</figure>
+				</li>
+				<li><figure>
+						<img class="atraccion-osorno" src="../assets/img/mall.jpg" alt="mall">
+						<caption>Antillanca</caption>
+					</figure>
+				</li>
+			</ul>	
+		</div>
+	</section>
+	<section class="reservas">
+		<h3>¡Confirma desde ya tu estadía en la magia del sur!</h3>
+		<div id="llegada">
+			<label id="checkInLabel" for ="checkIn">Llegada</label>
+			<input type="text" id="checkIn" placeholder="DD/MM/YYYY" class="elegirFecha">
+		</div>
+		<div id="salida">
+			<label id="checkOutLabel" for ="checkOut">Salida</label>
+			<input type="text" id="checkOut" placeholder="DD/MM/YYYY" class="elegirFecha">
+		</div>
+		<div id="numeroAdultos">
+			<label for="adultos" id="adultosLabel">Adultos</label>
+			<select id="adultos">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+			</select>	
+		</div>
+		<div id="numeroInfantes">
+			<label for="infantes" id="infantesLabel">Niños</label>
+			<select id="infantes">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+			</select>	
+		</div>
+		<button type="submit" value="submit" class="reserva">¡Reserva Ya!</button>
+	</section>
+</section>
+

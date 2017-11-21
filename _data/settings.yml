@@ -1,0 +1,6 @@
+# home slide
+slide:
+- {name: "Portal Osorno",   file: "portalosorno.jpg"}
+- {name: "Termas de Puyehue",  file: "termaspuyehue.jpg"}
+- {name: "Casino Sol",  file: "casinosol.jpg"}
+- {name: "Volcan Osorno",   file: "volcanosorno.jpg"}
