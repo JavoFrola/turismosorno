@@ -4,3 +4,11 @@ slide:
 - {name: "Termas de Puyehue",  file: "termaspuyehue.jpg"}
 - {name: "Casino Sol",  file: "casinosol.jpg"}
 - {name: "Volcan Osorno",   file: "volcanosorno.jpg"}
+
+fuerte:
+- {name: " Muro del Fuerte Luisa", file: "fuertemuro.jpg"}
+- {name: " Cañon", file: "fuertecañon.jpg"}
+- {name: " Roca gigante Fuerte Luisa", file: "rocagigante.jpg"}
+- {name: " Museo Fuerte Luisa", file: "museofuerte.jpg"}
+- {name: " Fuerte y casino Sol", file: "fuertecasino.jpg"}
+
